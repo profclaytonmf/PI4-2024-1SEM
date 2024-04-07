@@ -1,0 +1,4 @@
+[submodule "Projeto/frontend"]
+	path = Projeto/frontend
+	url = https://github.com/GuilhermeSilva3176/PI4-2024-1SEM-GP4.git
+	branch = frontend
