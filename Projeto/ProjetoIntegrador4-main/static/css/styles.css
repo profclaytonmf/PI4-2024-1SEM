@@ -1,0 +1,261 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.imagem-fixa {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/imgLogin.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    z-index: -1; 
+}
+.icon-user{
+    position: fixed; 
+    width: 25px;
+    height: 25px;
+    background-image: url('/static/img/account_box.png'); 
+    background-size: cover;
+    background-position: center; 
+    z-index: -1; 
+}
+.text-user{
+    left: 4px;
+    color: white;
+    top: -700px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.topo-pagina {
+    position: fixed;
+    top: 50px;
+    width: 65%;
+    right: 190px;
+    z-index: 800; 
+}
+.h2-formAluno{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 750; 
+    font-size: 23px;
+}
+.login-box {
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-left: auto; 
+    margin-right: 150px; 
+}
+
+.login-box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #333;
+    text-align: left;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    background: transparent;
+    color: #555;
+}
+.textbox-conta {
+    font-size: 13px;
+    color: #555;
+}
+
+.btn:hover {
+    background-color: #4d6ff7;
+}
+
+.selecionado{
+    background: black;
+    color:white;
+}
+.left-menu {
+    background: linear-gradient(to bottom, #616fd8 50%, #050E32 50%);
+    height: 110vh;
+
+  }
+  .left-menu .nav-link {
+    color: white;
+    transition: color 0.1s;
+  }
+  .left-menu .nav-link:hover {
+    color: rgb(0, 0, 0); 
+  }
+
+  .left-menu-logo {
+    text-align: left;
+    background-image: url('/static/img/Prancheta1.png'); 
+    background-size: 230px; /* Definindo largura e altura manualmente */
+    background-repeat: no-repeat;
+
+    width: 270px;
+    height: 120px; 
+    background-position: left center;
+
+}
+
+
+
+
+
+
+
+.texto-superior {
+    position: absolute;
+    top: 150px; 
+    right: 565px; 
+    transform: translateX(-50%);
+}
+
+.btn-custom {
+  
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+    background-color: #050E32; /* Cor de fundo quando hover, foco ou ativo */
+    color: #EEEEF6; /* Cor do texto quando hover, foco ou ativo */
+    /* Adicione outros estilos conforme necessário */
+}
+
+.button-container button {
+    padding: 10px 14px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    top: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.h2-notaFrequencia{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 750; 
+    font-size: 23px;
+}
+.input-text-procurarMateria {
+    width: 260px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #eeeef4;
+    color: #333; 
+    font-size: 14px; 
+    outline: none;
+}
+.input-text-filtroData {    
+    width: 260px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #eeeef4;
+    color: #333;
+    font-size: 14px; 
+    outline: none; 
+}
+.btn-buscar {
+    width: 200px; 
+    background-color: #D60A0B; 
+    color: #fff;
+    border: none; 
+    font-weight: 620; 
+    border-radius: 12px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    float: right; 
+}
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: #f2f2f2;
+    color: #D60A0B;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para as células de dados */
+td {
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para as linhas alternadas da tabela */
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.vertical-align-middle {
+    display: flex;
+    align-items: center;
+}
+.caixa-btn {
+   
+    border: 1px solid rgb(0, 0, 0)a1a;
+}
+/* Alinhamento à esquerda */
+.text-left {
+    text-align: left !important;
+}
+
+/* Alinhamento à direita */
+.text-right {
+    text-align: right !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+
+
+
+
+
+
+

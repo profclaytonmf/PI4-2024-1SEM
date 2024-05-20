@@ -1,0 +1,253 @@
+<html>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/static/css/styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <head>
+        <title>Formulário Autonomia e Protagonismo </title>
+    </head>
+    <body>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 left-menu">
+                <br>
+                <div class="left-menu-logo">
+
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item text-left">
+                      <a class="nav-link" href="formsAutonomiaAlunos.html">AUTONOMIA E PROTAGONISMO</a>
+                    </li>
+                    <li class="nav-item text-left">
+                      <a class="nav-link" href="formsClimaEscolarAlunos.html">CLIMA ESCOLAR</a>
+                    </li>
+                    <li class="nav-item text-left">
+                      <a class="nav-link" href="formsQualidadeEnsinoAlunos.html">QUALIDADE DE ENSINO</a>
+                    </li>
+                    <li class="nav-item text-left">
+                        <a class="nav-link" href="formsInfraestruturaAlunos.html">INFRAESTRUTURA</a>
+                    </li>
+                    <li class="nav-item text-left">
+                        <a class="nav-link" href="formsGestaoAlunos.html">GESTÃO</a>
+                    </li>
+                    <li class="nav-item text-left">
+                        <a class="nav-link" href="observacoesAlunos.html">OBSERVAÇÕES</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <form action="/educador_formulario" method="POST">  
+                        <br>
+                        <br>
+                        <br>             
+                        <div class="row"> 
+                            <br>
+                             <div class="col-md-4 text-center">
+                                 <h2 class="h2-formAluno">Autonomia e Protagonismo</h2>
+                             </div>
+                             <div class="col-md-6 text-right" >
+                                    <select name="educador" id="educador" class="form-select">
+                                        <option value="vazio" selected>Selecione o professor</option>
+                                        <option value="José Martinele">José Martinele</option>
+                                        <option value="Ozias">Ozias</option>
+                                        <option value="Clayton">Clayton</option>
+                                    </select>
+                             </div>
+                        </div>   
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p class="">Você se sente motivado nas aulas?</p>
+                        <div class="btn-group" role="group" name="question1">
+                            <input type="button" class="btn btn-primary" name="answer1" value="0">
+                            <input type="button" class="btn btn-primary" name="answer1" value="1">
+                            <input type="button" class="btn btn-primary" name="answer1" value="2">
+                            <input type="button" class="btn btn-primary" name="answer1" value="3">
+                            <input type="button" class="btn btn-primary" name="answer1" value="4">
+                            <input type="button" class="btn btn-primary" name="answer1" value="5">
+                            <input type="button" class="btn btn-primary" name="answer1" value="6">
+                            <input type="button" class="btn btn-primary" name="answer1" value="7">
+                            <input type="button" class="btn btn-primary" name="answer1" value="8">
+                            <input type="button" class="btn btn-primary" name="answer1" value="9">
+                            <input type="button" class="btn btn-primary" name="answer1" value="10">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="">Você se sente à vontade para fazer perguntas e expressar suas dúvidas</p>
+                        <div class="btn-group" role="group" name="question2">
+                            <input type="button" class="btn btn-primary" name="answer2" value="0">
+                            <input type="button" class="btn btn-primary" name="answer2" value="1">
+                            <input type="button" class="btn btn-primary" name="answer2" value="2">
+                            <input type="button" class="btn btn-primary" name="answer2" value="3">
+                            <input type="button" class="btn btn-primary" name="answer2" value="4">
+                            <input type="button" class="btn btn-primary" name="answer2" value="5">
+                            <input type="button" class="btn btn-primary" name="answer2" value="6">
+                            <input type="button" class="btn btn-primary" name="answer2" value="7">
+                            <input type="button" class="btn btn-primary" name="answer2" value="8">
+                            <input type="button" class="btn btn-primary" name="answer2" value="9">
+                            <input type="button" class="btn btn-primary" name="answer2" value="10">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p class="">Você questiona os conteúdos apresentados em sala de aula
+                        </p>
+                        <div class="btn-group" role="group" name="question3">
+                            <input type="button" class="btn btn-primary" name="answer3" value="0">
+                            <input type="button" class="btn btn-primary" name="answer3" value="1">
+                            <input type="button" class="btn btn-primary" name="answer3" value="2">
+                            <input type="button" class="btn btn-primary" name="answer3" value="3">
+                            <input type="button" class="btn btn-primary" name="answer3" value="4">
+                            <input type="button" class="btn btn-primary" name="answer3" value="5">
+                            <input type="button" class="btn btn-primary" name="answer3" value="6">
+                            <input type="button" class="btn btn-primary" name="answer3" value="7">
+                            <input type="button" class="btn btn-primary" name="answer3" value="8">
+                            <input type="button" class="btn btn-primary" name="answer3" value="9">
+                            <input type="button" class="btn btn-primary" name="answer3" value="10">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="">Você assume a responsabilidade pelo seu processo de aprendizagem</p>
+                        <div class="btn-group" role="group" name="question4">
+                            <input type="button" class="btn btn-primary" name="answer4" value="0">
+                            <input type="button" class="btn btn-primary" name="answer4" value="1">
+                            <input type="button" class="btn btn-primary" name="answer4" value="2">
+                            <input type="button" class="btn btn-primary" name="answer4" value="3">
+                            <input type="button" class="btn btn-primary" name="answer4" value="4">
+                            <input type="button" class="btn btn-primary" name="answer4" value="5">
+                            <input type="button" class="btn btn-primary" name="answer4" value="6">
+                            <input type="button" class="btn btn-primary" name="answer4" value="7">
+                            <input type="button" class="btn btn-primary" name="answer4" value="8">
+                            <input type="button" class="btn btn-primary" name="answer4" value="9">
+                            <input type="button" class="btn btn-primary" name="answer4" value="10">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p>Você se esforça para compreender os conteúdos e se dedica às atividades propostas
+                        </p>
+                        <div class="btn-group" role="group" name="question5">
+                            <input type="button" class="btn btn-primary" name="answer5" value="0">
+                            <input type="button" class="btn btn-primary" name="answer5" value="1">
+                            <input type="button" class="btn btn-primary" name="answer5" value="2">
+                            <input type="button" class="btn btn-primary" name="answer5" value="3">
+                            <input type="button" class="btn btn-primary" name="answer5" value="4">
+                            <input type="button" class="btn btn-primary" name="answer5" value="5">
+                            <input type="button" class="btn btn-primary" name="answer5" value="6">
+                            <input type="button" class="btn btn-primary" name="answer5" value="7">
+                            <input type="button" class="btn btn-primary" name="answer5" value="8">
+                            <input type="button" class="btn btn-primary" name="answer5" value="9">
+                            <input type="button" class="btn btn-primary" name="answer5" value="10">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="">Você busca novas informações e conhecimentos além do que é apresentado em sala de aula</p>
+                        <div class="btn-group" role="group" name="question6">
+                            <input type="button" class="btn btn-primary" name="answer6" value="0">
+                            <input type="button" class="btn btn-primary" name="answer6" value="1">
+                            <input type="button" class="btn btn-primary" name="answer6" value="2">
+                            <input type="button" class="btn btn-primary" name="answer6" value="3">
+                            <input type="button" class="btn btn-primary" name="answer6" value="4">
+                            <input type="button" class="btn btn-primary" name="answer6" value="5">
+                            <input type="button" class="btn btn-primary" name="answer6" value="6">
+                            <input type="button" class="btn btn-primary" name="answer6" value="7">
+                            <input type="button" class="btn btn-primary" name="answer6" value="8">
+                            <input type="button" class="btn btn-primary" name="answer6" value="9">
+                            <input type="button" class="btn btn-primary" name="answer6" value="10">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p>Você participa ativamente das discussões e atividades em sala de aula
+                        </p>
+                        <div class="btn-group" role="group" name="question7">
+                            <input type="button" class="btn btn-primary" name="answer7" value="0">
+                            <input type="button" class="btn btn-primary" name="answer7" value="1">
+                            <input type="button" class="btn btn-primary" name="answer7" value="2">
+                            <input type="button" class="btn btn-primary" name="answer7" value="3">
+                            <input type="button" class="btn btn-primary" name="answer7" value="4">
+                            <input type="button" class="btn btn-primary" name="answer7" value="5">
+                            <input type="button" class="btn btn-primary" name="answer7" value="6">
+                            <input type="button" class="btn btn-primary" name="answer7" value="7">
+                            <input type="button" class="btn btn-primary" name="answer7" value="8">
+                            <input type="button" class="btn btn-primary" name="answer7" value="9">
+                            <input type="button" class="btn btn-primary" name="answer7" value="10">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="">Você busca diferentes perspectivas e pontos de vista sobre os temas abordados
+                        </p>
+                        <div class="btn-group" role="group" name="question8">
+                            <input type="button" class="btn btn-primary" name="answer8" value="0">
+                            <input type="button" class="btn btn-primary" name="answer8" value="1">
+                            <input type="button" class="btn btn-primary" name="answer8" value="2">
+                            <input type="button" class="btn btn-primary" name="answer8" value="3">
+                            <input type="button" class="btn btn-primary" name="answer8" value="4">
+                            <input type="button" class="btn btn-primary" name="answer8" value="5">
+                            <input type="button" class="btn btn-primary" name="answer8" value="6">
+                            <input type="button" class="btn btn-primary" name="answer8" value="7">
+                            <input type="button" class="btn btn-primary" name="answer8" value="8">
+                            <input type="button" class="btn btn-primary" name="answer8" value="9">
+                            <input type="button" class="btn btn-primary" name="answer8" value="10">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p>Você é capaz de pensar de forma crítica e criativa, propondo soluções e ideias inovadoras
+
+                        </p>
+                        <div class="btn-group" role="group" name="question9">
+                            <input type="button" class="btn btn-primary" name="answer9" value="0">
+                            <input type="button" class="btn btn-primary" name="answer9" value="1">
+                            <input type="button" class="btn btn-primary" name="answer9" value="2">
+                            <input type="button" class="btn btn-primary" name="answer9" value="3">
+                            <input type="button" class="btn btn-primary" name="answer9" value="4">
+                            <input type="button" class="btn btn-primary" name="answer9" value="5">
+                            <input type="button" class="btn btn-primary" name="answer9" value="6">
+                            <input type="button" class="btn btn-primary" name="answer9" value="7">
+                            <input type="button" class="btn btn-primary" name="answer9" value="8">
+                            <input type="button" class="btn btn-primary" name="answer9" value="9">
+                            <input type="button" class="btn btn-primary" name="answer9" value="10">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="">Você se reconhece como agente de transformação social
+                        </p>
+                        <div class="btn-group" role="group" name="question10">
+                            <input type="button" class="btn btn-primary" name="answer10" value="0">
+                            <input type="button" class="btn btn-primary" name="answer10" value="1">
+                            <input type="button" class="btn btn-primary" name="answer10" value="2">
+                            <input type="button" class="btn btn-primary" name="answer10" value="3">
+                            <input type="button" class="btn btn-primary" name="answer10" value="4">
+                            <input type="button" class="btn btn-primary" name="answer10" value="5">
+                            <input type="button" class="btn btn-primary" name="answer10" value="6">
+                            <input type="button" class="btn btn-primary" name="answer10" value="7">
+                            <input type="button" class="btn btn-primary" name="answer10" value="8">
+                            <input type="button" class="btn btn-primary" name="answer10" value="9">
+                            <input type="button" class="btn btn-primary" name="answer10" value="10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    
