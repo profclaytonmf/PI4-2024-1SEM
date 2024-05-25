@@ -282,6 +282,30 @@ tbody tr:nth-child(even) {
 }
 
 
+/* estilo botao mudar pagina NAO SEI PQ NAO FUNCIONA AAAAAAAAAAAAAAAAA */
+.btn-prox-pag button {
+    align-items: end;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: red;
+    border: 0;
+    border-radius: 20px;
+}
+.btn-prox-pag button:hover {
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.075);
+    transition: .2s;
+}
+.btn-voltar-pag button {
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: red;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 
 
