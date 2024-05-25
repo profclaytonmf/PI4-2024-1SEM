@@ -342,9 +342,9 @@ a.nav-link.btn-voltar-pag {
 }
 
 .btn-voltar-pag:hover {
-  box-shadow: 0px 0px 8px black;
-  transform: scale(1.075);
-  transition: 0.2s;
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.075);
+    transition: 0.2s;
 }
 
 .btn-submit input{
@@ -359,4 +359,9 @@ a.nav-link.btn-voltar-pag {
     border-radius: 20px;
     background-color: #042d6b;
     color: rgb(255, 255, 255);
+}
+.btn-submit input:hover {
+    box-shadow: 0px 0px 8px black;
+  transform: scale(1.075);
+  transition: 0.2s;
 }
