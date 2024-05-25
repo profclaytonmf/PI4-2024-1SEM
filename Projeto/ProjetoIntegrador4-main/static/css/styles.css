@@ -138,7 +138,7 @@ body {
   color: white;
 }
 .left-menu {
-  background: linear-gradient(to bottom, #616fd8 70%, #050e32 30%);
+  background: linear-gradient(to bottom, #042d6b 70%, #050e32 30%);
   height: 110vh;
 }
 .left-menu .nav-link {
@@ -345,4 +345,18 @@ a.nav-link.btn-voltar-pag {
   box-shadow: 0px 0px 8px black;
   transform: scale(1.075);
   transition: 0.2s;
+}
+
+.btn-submit input{
+    width: 100%;
+    position: relative;
+    margin: 25px 50px 0px 0px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    border: 0;
+    border-radius: 20px;
+    background-color: #042d6b;
+    color: rgb(255, 255, 255);
 }
