@@ -285,9 +285,10 @@ tbody tr:nth-child(even) {
     width: 500px;
 }
 
-/* estilo botao mudar pagina NAO SEI PQ NAO FUNCIONA AAAAAAAAAAAAAAAAA */
-.clayton-button{
-    align-items: end;
+/* estilo botões mudar pagina  */
+.btn-proxima-pag {
+    display: flex;
+    align-items: center;
     padding: 10px 30px;
     font-size: 18px;
     font-weight: 500;
@@ -295,13 +296,15 @@ tbody tr:nth-child(even) {
     border: 0;
     border-radius: 20px;
 }
-.btn-prox-pag button:hover {
+.btn-proxima-pag :hover {
     box-shadow: 0px 0px 8px black;
     transform: scale(1.075);
     transition: .2s;
 }
-.btn-voltar-pag button {
-    padding: 10px 0px;
+.btn-voltar-pag {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
     font-size: 18px;
     font-weight: 500;
     background-color: red;
