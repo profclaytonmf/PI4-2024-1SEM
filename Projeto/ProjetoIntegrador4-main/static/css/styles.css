@@ -280,10 +280,13 @@ tbody tr:nth-child(even) {
 .text-center {
     text-align: center !important;
 }
-
+.teste-h3{
+    color: green;
+    width: 500px;
+}
 
 /* estilo botao mudar pagina NAO SEI PQ NAO FUNCIONA AAAAAAAAAAAAAAAAA */
-.clayton-button {
+.clayton-button{
     align-items: end;
     padding: 10px 30px;
     font-size: 18px;
