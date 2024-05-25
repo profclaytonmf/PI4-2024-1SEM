@@ -283,7 +283,7 @@ tbody tr:nth-child(even) {
 
 
 /* estilo botao mudar pagina NAO SEI PQ NAO FUNCIONA AAAAAAAAAAAAAAAAA */
-.btn-prox-pag button {
+.clayton-button {
     align-items: end;
     padding: 10px 30px;
     font-size: 18px;
