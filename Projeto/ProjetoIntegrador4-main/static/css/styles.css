@@ -149,6 +149,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
+
 .left-menu-logo {
   background-image: url("../img/Prancheta1.png");
   background-repeat: no-repeat;
@@ -162,20 +163,32 @@ body {
 }
 
 .btn-custom {
-  background-color: #f0f0f0;
-  color: #333;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.1s;
+  background-color: #042d6b;
+  color: white;
+  border: none;
+  border-radius: 1px;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-custom:hover,
-.btn-custom:focus,
+
+.btn-custom:hover {
+  background-color: #2494fd;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
 .btn-custom:active {
-  background-color: #050e32; /* Cor de fundo quando hover, foco ou ativo */
-  color: #eeeef6; /* Cor do texto quando hover, foco ou ativo */
-  /* Adicione outros estilos conforme necessário */
+  transform: translateY(1px);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-custom:disabled {
+  background-color: #6c757d;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .button-container button {
