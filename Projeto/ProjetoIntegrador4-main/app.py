@@ -37,3 +37,16 @@ def success():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+    import random
+    import string
+
+    def gerar_id_usuario():
+        return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(5))
+
+    id_usuario = gerar_id_usuario()
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO Usuarios (ID, Nome, CPF, DataNascimento, TipoUsuario, Senha) VALUES (%s, %s, %s, %s, %s, %s)", (id_usuario, nome, cpf, data_nascimento, tipo_usuario, senha_hash))
+    mysql.connection.commit()
+    cur.close()
