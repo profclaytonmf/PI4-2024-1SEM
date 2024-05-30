@@ -18,9 +18,12 @@ def AlunoClima():
 @app.route('/AlunoInfra')
 def AlunosInfra():
     return render_template('formsAlunosInfraestrutura.html')
-@app.route('/AlunosGestao')
+@app.route('/AlunoGestao')
 def AlunosGestao():
     return render_template('formsAlunosGestao.html')
+@app.route('/FrequenciaVisualizar')
+def FrequenciaVisualizar():
+    return render_template('notasFrequenciaVisualizar.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
