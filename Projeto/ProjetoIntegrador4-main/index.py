@@ -5,9 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('login.html')
-@app.route('/indexAlunos')
-def indexAlunos():
     return render_template('indexAlunos.html')
 @app.route('/AlunoAutonomia')
 def AlunoAutonomia():
@@ -21,7 +18,7 @@ def AlunoClima():
 @app.route('/AlunoInfra')
 def AlunosInfra():
     return render_template('formsAlunosInfraestrutura.html')
-@app.route('/AlunoGestao')
+@app.route('/AlunosGestao')
 def AlunosGestao():
     return render_template('formsAlunosGestao.html')
 
