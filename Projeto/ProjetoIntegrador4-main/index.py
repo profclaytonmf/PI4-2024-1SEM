@@ -2,9 +2,16 @@ from flask import Flask, render_template
 import pandas as pd
 
 app = Flask(__name__)
-
 @app.route('/')
+def homee():
+    return render_template('home.html')
+
+@app.route('/home')
 def home():
+    return render_template('home.html')
+
+@app.route('/indexAlunos')
+def indexAlunos():
     return render_template('indexAlunos.html')
 
 @app.route('/AlunoAutonomia')

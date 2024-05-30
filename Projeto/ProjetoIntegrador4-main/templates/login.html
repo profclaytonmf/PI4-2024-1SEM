@@ -17,11 +17,15 @@
     <div class="login-box">
         <h2>FAÇA SEU LOGIN</h2>
         <form method="POST">
+            {{ form.hidden_tag() }}
             <div class="textbox">
-                <input type="text" placeholder="Insira o ID do usuario" name="username" required>
+                {{ form.username.label }} {{ form.username() }}
             </div>
             <div class="textbox">
-                <input type="password" placeholder="Senha" name="password" required>
+                {{ form.password.label }} {{ form.password() }}
+            </div>
+            <div>
+                {{ form.recaptcha() }}
             </div>
             <input type="submit" class="btn button-cadastro" value="Acessar">
         </form>
