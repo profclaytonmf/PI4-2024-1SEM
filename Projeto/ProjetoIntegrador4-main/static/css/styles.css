@@ -378,3 +378,8 @@ a.nav-link.btn-voltar-pag {
   transform: scale(1.075);
   transition: 0.2s;
 }
+
+.tutoform {
+  color: grey;
+  font-size: 1.25rem;
+}
