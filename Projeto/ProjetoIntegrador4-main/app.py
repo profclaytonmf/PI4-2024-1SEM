@@ -26,7 +26,7 @@ def login():
         usuario = cur.fetchone()
         cur.close()
         if usuario:
-            return render_template('formsAlunosQualidadeEnsino.html')  # Redireciona para forms.html se a senha estiver correta
+            return render_template('formsAlunosQualidadeEnsino.html')  
         else:
             return 'Falha no login!'
     return render_template('login.html')
