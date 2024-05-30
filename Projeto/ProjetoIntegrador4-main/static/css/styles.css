@@ -383,3 +383,9 @@ a.nav-link.btn-voltar-pag {
   color: grey;
   font-size: 1.25rem;
 }
+/* texto home */
+.texto {
+  align-items: center;
+  display: flex;
+  color: #2494fd;
+}
