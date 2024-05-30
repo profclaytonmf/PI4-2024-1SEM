@@ -24,36 +24,10 @@
   </head>
 
   <body>
-    <div id="wrapper">
-      <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-          <li class="sidebar-brand mb-4">
-            <a href="#"><img src="static/img/logo.png" alt="Menu"></a>
-          </li>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Dados</a>
-          </li>
-          <li>
-            <a href="#">Presença</a>
-          </li>
-          <li>
-            <a href="#">Notas</a>
-          </li>
-          <li>
-            <a href="#">Avaliar</a>
-            <ul>
-              <li><a href="AlunoAutonomia">Autonomia</a></li>
-              <li><a href="AlunoEnsino">Ensino</a></li>
-              <li><a href="AlunoClima">Clima Escolar</a></li>
-              <li><a href="AlunoInfra">Infraestrtura</a></li>
-              <li><a href="AlunoGestao">Gestão</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div> 
+    {% extends "base.html" %}
+    {% block content %}
+      <!-- conteúdo específico da página indexAlunos aqui -->
+    {% endblock %}
       <div class="content-area">
         <div class="container-fluid">
           <div class="main">
