@@ -241,6 +241,23 @@ body {
   float: right;
 }
 /* Estilo para a tabela */
+
+table body {
+  overflow-y: auto;
+  height: 200px;
+}
+
+table.scrolldown {
+  width: 100%;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar-thumb  { 
+  width: 10px;
+
+}
+
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -262,6 +279,34 @@ td {
   padding: 11px;
   border: 1px solid #ddd;
 }
+table.scrolldown {
+  width: 68%;
+
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+tbody td,
+        thead th {
+            width: 200px;
+            /* border-right: 2px solid black; */
+        }
+
+table.scrolldown tbody {
+
+  height: 200px;
+ 
+  overflow-y: auto;
+ 
+  overflow-x: auto;
+  
+}
+
 
 /* Estilo para as linhas alternadas da tabela */
 tbody tr:nth-child(even) {
@@ -383,9 +428,13 @@ a.nav-link.btn-voltar-pag {
   color: grey;
   font-size: 1.25rem;
 }
+
 /* texto home */
 .texto {
   align-items: center;
   display: flex;
   color: #000000;
 }
+
+
+

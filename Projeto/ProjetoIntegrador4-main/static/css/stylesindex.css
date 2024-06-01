@@ -10,8 +10,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100px;
   margin: 0 5%; 
+  width: 500px;
 }
 
 .sparkboxes {
@@ -95,12 +96,12 @@ body {
   width: 8px;
 }
 
-.table-box table::-webkit-scrollbar-track {
+.tbody table::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-.table-box table::-webkit-scrollbar-thumb {
-  background: #FF6101;
+tbody::-webkit-scrollbar-thumb {
+  background: #ff0000;
   border-radius: 4px;
 }
 
