@@ -215,8 +215,7 @@
   cursor: pointer;
   float: right;
 }
-<<<<<<< HEAD
-=======
+
 /* Estilo para a tabela */
 
 table body {
@@ -240,11 +239,10 @@ table {
   border-collapse: collapse;
   font-family: Arial, sans-serif;
 }
->>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
 
 
-<<<<<<< HEAD
-=======
+
+
 /* Estilo para as células de dados */
 td {
   padding: 11px;
@@ -278,7 +276,6 @@ table.scrolldown tbody {
   
 }
 
->>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
 
 .text-right {
   text-align: right !important;
@@ -393,7 +390,6 @@ a.nav-link.btn-voltar-pag {
 
 
 
-<<<<<<< HEAD
 .table-box {
   display: flex;
   flex-direction: column;
@@ -580,6 +576,3 @@ a.nav-link.btn-voltar-pag {
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
-
-=======
->>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
