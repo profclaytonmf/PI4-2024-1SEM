@@ -215,8 +215,70 @@
   cursor: pointer;
   float: right;
 }
+<<<<<<< HEAD
+=======
+/* Estilo para a tabela */
+
+table body {
+  overflow-y: auto;
+  height: 200px;
+}
+
+table.scrolldown {
+  width: 100%;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar-thumb  { 
+  width: 10px;
+
+}
 
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+>>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
+
+
+<<<<<<< HEAD
+=======
+/* Estilo para as células de dados */
+td {
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+table.scrolldown {
+  width: 68%;
+
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+tbody td,
+        thead th {
+            width: 200px;
+            /* border-right: 2px solid black; */
+        }
+
+table.scrolldown tbody {
+
+  height: 200px;
+ 
+  overflow-y: auto;
+ 
+  overflow-x: auto;
+  
+}
+
+>>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
 
 .text-right {
   text-align: right !important;
@@ -321,6 +383,7 @@ a.nav-link.btn-voltar-pag {
   color: grey;
   font-size: 1.25rem;
 }
+
 /* texto home */
 .texto {
   align-items: center;
@@ -329,14 +392,8 @@ a.nav-link.btn-voltar-pag {
 }
 
 
-/* tabela */
-.box {
-  box-shadow: 0px 1px 22px -12px #607D8B;
-  background-color: #fff;
-  padding: 30px 35px 25px 50px;
-  margin-left: 50px;
-}
 
+<<<<<<< HEAD
 .table-box {
   display: flex;
   flex-direction: column;
@@ -524,3 +581,5 @@ a.nav-link.btn-voltar-pag {
   font-family: Arial, sans-serif;
 }
 
+=======
+>>>>>>> b42552cbf3fdc1277e94d51fc0079474c75587aa
