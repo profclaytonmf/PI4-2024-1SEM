@@ -1,9 +1,4 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+
 .imagem-fixa {
   position: fixed;
   top: 0;
@@ -29,16 +24,7 @@ html {
   color: white;
   top: -700px;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
+
 .topo-pagina {
   position: fixed;
   top: 50px;
@@ -77,13 +63,13 @@ body {
 .button-cadastro {
   width: 120px;
   border-radius: 10px;
-  background-color: #6c757d; /* Cor de fundo do botão */
-  color: #fff; /* Cor do texto do botão */
-  border-color: #6c757d; /* Cor da borda do botão */
+  background-color: #6c757d; 
+  color: #fff; 
+  border-color: #6c757d;
 }
 .button-cadastro:hover {
-  background-color: #3f4143; /* Cor de fundo do botão ao passar o mouse */
-  border-color: #616161; /* Cor da borda do botão ao passar o mouse */
+  background-color: #3f4143; 
+  border-color: #616161; 
 }
 .custom-select {
   position: relative;
@@ -136,17 +122,6 @@ body {
 .selecionado {
   background: black;
   color: white;
-}
-.left-menu {
-  background: linear-gradient(to bottom, #042d6b 70%, #050e32 30%);
-  height: 110vh;
-}
-.left-menu .nav-link {
-  color: white;
-  transition: color 0.1s;
-}
-.left-menu .nav-link:hover {
-  color: rgb(0, 0, 0);
 }
 
 
@@ -240,46 +215,9 @@ body {
   cursor: pointer;
   float: right;
 }
-/* Estilo para a tabela */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-}
 
-/* Estilo para o cabeçalho da tabela */
-th {
-  background-color: #f2f2f2;
-  color: #d60a0b;
-  font-weight: bold;
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
 
-/* Estilo para as células de dados */
-td {
-  padding: 11px;
-  border: 1px solid #ddd;
-}
 
-/* Estilo para as linhas alternadas da tabela */
-tbody tr:nth-child(even) {
-  background-color: #ffffff;
-}
-.vertical-align-middle {
-  display: flex;
-  align-items: center;
-}
-.caixa-btn {
-  border: 1px solid rgb(0, 0, 0) a1a;
-}
-/* Alinhamento à esquerda */
-.text-left {
-  text-align: left !important;
-}
-
-/* Alinhamento à direita */
 .text-right {
   text-align: right !important;
 }
@@ -291,7 +229,7 @@ tbody tr:nth-child(even) {
   width: 500px;
 }
 
-/* estilo botões mudar pagina  */
+
 .controle-pags {
   display: inline-block;
   align-items: left;
@@ -457,3 +395,132 @@ a.nav-link.btn-voltar-pag {
 .table-box table::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+.header-img {
+  background-image: url('../img/header-home.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 350px; 
+  width: 100%;
+  color: #fff; 
+  padding: 20px; 
+}
+
+
+.texto-sobreposto {
+  position: absolute; 
+  top: 20%; 
+  left: 21%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: #ffffff; 
+  z-index: 1; 
+}
+
+.h5-header {
+  top: 120px;
+  font-weight: 790; 
+  font-size: 25px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+  color: #ffffff; 
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: 2px solid #333; 
+  color: #333; 
+  padding: 4px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  margin-top: 125px; 
+  right: 145px;
+}
+
+.transparent-button:hover {
+  background-color: transparent; 
+  font-weight: 520;
+  border: 2px solid #000000; 
+  color: #000; 
+}
+.title-welcome{
+  position: relative;
+  right: 70px;
+}
+.teste{
+  box-sizing: 250px;
+}
+
+.h5-body-title {
+  left: 420px;
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
+
+.statics-log{
+  height: 115px; 
+  width: 150px; 
+  background-image: url('../img/statics1.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.staticsTittle-log{
+  position: relative;
+  top: 125px;
+  left: 22px;
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
+.school-log{
+  height: 115px; 
+  width: 150px; 
+  background-image: url('../img/schoolLog.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.gestao-log{
+  height: 115px; 
+  width: 170px; 
+  background-image: url('../img/gestaoIcon.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.text-box-estatistica{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.text-box-personal{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.text-box-gestao{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
