@@ -576,3 +576,23 @@ a.nav-link.btn-voltar-pag {
   font-size: 14px;
   font-family: Arial, sans-serif;
 }
+.homeImag-body {
+  border: 4px solid #333; /* Adicionando uma borda de 2px sólida com cor #333 */
+  border-radius: 80px;
+  position: relative;
+  right: -185px;
+  height: 315px;
+  width: 450px;
+  background-image: url('../img/bodyimgHome.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutUs-tittleHome{
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
