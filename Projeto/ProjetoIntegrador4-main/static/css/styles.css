@@ -480,9 +480,9 @@ a.nav-link.btn-voltar-pag {
 }
 
 .transparent-button {
-  background-color: transparent;
-  border: 2px solid #333; 
-  color: #333; 
+  background-color: #ffffff;
+  border-radius: 7px;
+  color: #000000; 
   padding: 4px 14px;
   font-size: 16px;
   cursor: pointer;
@@ -494,10 +494,9 @@ a.nav-link.btn-voltar-pag {
 }
 
 .transparent-button:hover {
-  background-color: transparent; 
+  background-color: burlywood; 
   font-weight: 520;
-  border: 2px solid #000000; 
-  color: #000; 
+  border: 2px solid burlywood; 
 }
 .title-welcome{
   position: relative;
@@ -577,12 +576,11 @@ a.nav-link.btn-voltar-pag {
   font-family: Arial, sans-serif;
 }
 .homeImag-body {
-  border: 7px solid #333; 
-  border-radius: 80px;
+  border-radius: 15px;
   position: relative;
-  right: -185px;
+  right: -100px;
   height: 315px;
-  width: 450px;
+  width: 550px;
   background-image: url('../img/bodyimgHome.jpg');
   background-repeat: no-repeat;
   background-size: cover;
