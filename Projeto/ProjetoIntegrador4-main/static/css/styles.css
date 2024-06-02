@@ -588,6 +588,7 @@ a.nav-link.btn-voltar-pag {
 }
 
 .aboutUs-tittleHome{
+  border: none;
   color:#000;
   font-weight: 790; 
   font-size: 18px; 
