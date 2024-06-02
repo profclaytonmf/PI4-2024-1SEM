@@ -138,18 +138,20 @@
 }
 
 .btn-custom {
-  background-color: #042d6b;
-  color: white;
+  width: 37px;
+  height: 39px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 1px;
   padding: 10px 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px  1px 1px 1px rgba(46, 46, 46, 0.1);
 }
 
 
 .btn-custom:hover {
-  background-color: #2494fd;
+  background-color: #959697;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -614,4 +616,19 @@ a.nav-link.btn-voltar-pag {
   box-shadow: 0px 0px 8px black;
 transform: scale(1.075);
 transition: 0.2s;
+}
+
+.botao-enviar-autonomia{
+  width: 110px;
+  background-color: #333;
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.btn-enviar:hover {
+  background-color: #555; 
 }

@@ -8,27 +8,25 @@
     <head>
         <title>Formulário Autonomia e Protagonismo </title>
     </head>
-    <body>
+    <body style="font-family: 'Poppins', sans-serif;">
         {% extends "base.html" %}
         {% block content %}
 
-        <div class="container-fluid">
+        <div class="container-fluid">   
           <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-9">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
                 <div class="row">
                         <br>
                         <br>
-                        <br>             
-                        
                 </div>
-
+             
+                <h4>Autonomia</h4>
                 <br>
-                <br>
-                <h1>Autonomia dos Alunos</h1>
+                
                 <p class="tutoform">Marque de 0 a 10, como 0 sendo insatisfeito e 10 satisfeito</p>
                 <div class="row">
-                    <div class="col-md-6 ">
+                    <div class="col-md-6">
                         <p class="">1 - Você se sente motivado nas aulas?</p>
                         <div class="btn-group" role="group" name="question1">
                             <input type="button" class="btn-custom" name="answer1" value="0">
@@ -213,10 +211,22 @@
                 </div>
             </div>
           </div>
-        <div class="btn-submit">
+       <!-- <div class="btn-submit">
             <input type="submit" value="Enviar" />
-        </div>
+        </div> -->
 
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2 text-center">
+                <div class="botao-enviar-autonomia">
+                    Enviar
+                </div>
+            </div>
+        </div>
+        <br>
+     
         {% endblock %}
         
       </body>

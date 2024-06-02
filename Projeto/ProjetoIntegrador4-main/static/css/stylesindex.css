@@ -115,7 +115,7 @@ tbody::-webkit-scrollbar-thumb {
   width: 400px;
   height: 300%;
   overflow-y: auto;
-  background: #131F73;
+  background: #333;
   transition: all 0.5s ease;
 }
 
@@ -138,9 +138,10 @@ tbody::-webkit-scrollbar-thumb {
 }
 
 .sidebar-nav li a {
+  font-size: 20px;
   display: block;
   text-decoration: none;
-  color: #999999;
+  color: #fafafa;
 }
 
 .sidebar-nav li a:hover {
@@ -190,8 +191,9 @@ tbody::-webkit-scrollbar-thumb {
   }
 
   .sidebar-nav li a {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 15px;
   }
 }
 
