@@ -577,7 +577,7 @@ a.nav-link.btn-voltar-pag {
   font-family: Arial, sans-serif;
 }
 .homeImag-body {
-  border: 4px solid #333; /* Adicionando uma borda de 2px sólida com cor #333 */
+  border: 7px solid #333; 
   border-radius: 80px;
   position: relative;
   right: -185px;
@@ -595,4 +595,24 @@ a.nav-link.btn-voltar-pag {
   font-size: 18px; 
   letter-spacing: 1px; 
   line-height: 1.5;
+}
+
+.btn-submit-input-climaEscola{
+  left: 1100px;
+  width: 300px;
+  position: relative;
+  margin: 25px 50px 0px 0px;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  border: 0;
+  border-radius: 20px;
+  background-color: #042d6b;
+  color: rgb(255, 255, 255);
+}
+.btn-submit-input-climaEscola:hover {
+  box-shadow: 0px 0px 8px black;
+transform: scale(1.075);
+transition: 0.2s;
 }
