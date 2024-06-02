@@ -8,10 +8,9 @@
     <head>
         <title>Formulário Qualidade de Ensino</title>
     </head>
-    <body>
+    <body style="font-family: 'Poppins', sans-serif;">
     {% extends "base.html" %}
     {% block content %}
-
 
         <div class="container-fluid">
             <div class="row">
@@ -20,12 +19,10 @@
                   <div class="row">
                           <br>
                           <br>
-                          <br>             
                           <br>
-                          <br> 
                   </div>
-
-                  <h1>Qualidade de Ensino</h1>
+                  <h4>Qualidade de Ensino</h4>
+                  <br>
                   <p class="tutoform">Marque de 0 a 10, como 0 sendo insatisfeito e 10 satisfeito</p>
                   <div class="row">
                     <div class="col-md-6 ">
@@ -178,8 +175,20 @@
             </div>
           </div>
         </div>
-        <div class="btn-submit">
+    <!--    <div class="btn-submit">
             <input type="submit" value="Enviar" />
         </div>
+        -->
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2 text-center">
+                <div class="botao-enviar-autonomia">
+                    Enviar
+                </div>
+            </div>
+        </div>
+      
         {% endblock %}
     </body>
