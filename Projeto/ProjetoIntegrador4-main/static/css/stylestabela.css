@@ -35,32 +35,32 @@ table body {
   table {
     width: 100%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+   
   }
   
   tbody {
     width: 800px;
   }
   
-  /* Estilo para o cabeçalho da tabela */
+
   th {
     background-color: #f2f2f2;
-    color: #d60a0b;
+    color: #464444;
     font-weight: bold;
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
   }
   
-  /* Estilo para as células de dados */
+
   td {
     padding: 11px;
     border: 1px solid #ddd;
   }
   table.scrolldown {
-    width: 68%;
+    width: 100%;
   
-    /* border-collapse: collapse; */
+  
     border-spacing: 0;
   }
   
@@ -72,7 +72,7 @@ table body {
   tbody td,
           thead th {
               width: 200px;
-              /* border-right: 2px solid black; */
+  
           }
   
   table.scrolldown tbody {
@@ -86,7 +86,6 @@ table body {
   }
   
   
-  /* Estilo para as linhas alternadas da tabela */
   tbody tr:nth-child(even) {
     background-color: #ffffff;
   }

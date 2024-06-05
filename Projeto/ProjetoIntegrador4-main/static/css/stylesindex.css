@@ -109,6 +109,15 @@ tbody::-webkit-scrollbar-thumb {
   background: #a8a8a8;
 }
 
+.logo-ofc{
+  position: relative;
+  width: 145px;
+  height: 140px;
+  background-image: url("../img/educaAnalytics.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 #sidebar-wrapper {
   position: fixed;
   left: 0;
@@ -155,7 +164,7 @@ tbody::-webkit-scrollbar-thumb {
 }
 
 .sidebar-brand {
-  height: 65px;
+  height: 150px;
   font-size: 18px;
   line-height: 60px;
 }
