@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EducaAnalytics</title>
-  
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    />
-  
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700"
-      rel="stylesheet"
-    />
-  
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesindex.css') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" type="text/javascript"></script>
   </head>
 
 <body>
@@ -39,75 +29,20 @@
                     </li>
                     <li>
                         <a href="dados">Dados</a>
+                    </li>                    
+                    <li>
+                        <a href="FrequenciaVisualizar">Nota e Frequencia</a>
                     </li>
-                    {% if current_user.is_authenticated %}
-                        {% if current_user.tipo == 'Educando' %}
-                            <!-- Menu para Educando -->
-                            <li>
-                                <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-                              </li>
-                              <li>
-                                <a href="#">Avaliar</a>
-                                <ul>
-                                  <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
-                              </ul>
-                              </li>
-                        {% elif current_user.tipo == 'Educador' %}
-                            <!-- Menu para o tipo de Educador -->
-                            <li>
-                                <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-                              </li>
-                              <li>
-                                <a href="#">Avaliar</a>
-                                <ul>
-                                  <li><a href="{{ url_for('educador.EducadorCondTrab') }}">Trabalho</a></li>
-                                  <li><a href="{{ url_for('educador.EducadorEnsino') }}">Ensino</a></li>
-                                  <li><a href="{{ url_for('educador.ClimaEscolar') }}">Clima Escolar</a></li>
-                                  <li><a href="{{ url_for('educador.EducadorInfra') }}">Infraestrutura</a></li>
-                                  <li><a href="{{ url_for('educador.EducadorGestao') }}">Gestão</a></li>
-                                  <li><a href="{{ url_for('educador.EducadorParticipacao') }}">Participação</a></li>
-                                  <li><a href="{{ url_for('educador.EducadorGestao') }}">Gestão</a></li>
-                                  
-                              </ul>
-                              </li>
-                        {% elif current_user.tipo == 'Gestor' %}
-                            <!-- Menu para o tipo de Gestor -->
-                            <li>
-                                <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-                              </li>
-                              <li>
-                                <a href="#">Avaliar</a>
-                                <ul>
-                                  <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
-                              </ul>
-                              </li>
-                           
-                        {% elif current_user.tipo == 'Funcionário' %}
-                            <!-- Menu para o tipo de usuário Funcionário-->
-                            <li>
-                                <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-                              </li>
-                              <li>
-                                <a href="#">Avaliar</a>
-                                <ul>
-                                  <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-                                  <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
-                              </ul>
-                              </li>
-                            
-                        {% endif %}
-                    {% endif %}
+                    <li>
+                        <a href="#">Avaliar</a>
+                          <ul>
+                            <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
+                            <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
+                            <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
+                            <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
+                            <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
+                          </ul>
+                        </li>
                 </ul>
 </body>
 </html>               
