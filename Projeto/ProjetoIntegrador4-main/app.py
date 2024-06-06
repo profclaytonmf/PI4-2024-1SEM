@@ -3,6 +3,8 @@ from flask_login import LoginManager, UserMixin, login_user
 from flask_mysqldb import MySQL
 from controllers.educando_controller import educando_blueprint
 from controllers.educador_controller import educador_blueprint
+from controllers.gestor_controller import gestor_blueprint
+from controllers.funcionario_controller import funcionario_blueprint
 from controllers.login_controller import login_blueprint
 import hashlib
 
@@ -57,6 +59,8 @@ def login():
 app.register_blueprint(login_blueprint, url_prefix='/login')
 app.register_blueprint(educando_blueprint, url_prefix='/educando')
 app.register_blueprint(educador_blueprint, url_prefix='/educador')
+app.register_blueprint(gestor_blueprint, url_prefix='/gestor')
+app.register_blueprint(funcionario_blueprint, url_prefix='/funcionario')
 
 @app.route('/')
 def default():

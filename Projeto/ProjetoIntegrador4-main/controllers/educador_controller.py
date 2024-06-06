@@ -4,7 +4,7 @@ educador_blueprint = Blueprint('educador', __name__)
 
 @educador_blueprint.route('/home')
 def home():
-    return render_template('home.html')
+    return render_template('EducadorHome.html')
 
 @educador_blueprint.route('/EducadorCondTrab')
 def EducadorCondTrab():
