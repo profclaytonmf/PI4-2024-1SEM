@@ -39,10 +39,13 @@
   color: 050e32;
 }
 .login-box {
+  
   width: 400px;
-  height: 350px;
-  padding: 40px;
+  height: 300px;
+  padding: 50px;
   position: relative;
+  top: 220px;
+  left: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -115,8 +118,17 @@
   color: #555;
 }
 
+.btn {
+  padding: 10px 40px;
+  font-size: 18px;
+    font-weight: 500;
+    background-color:rgba(255, 255, 255, 0);
+    border: 10;
+    border-radius: 20px;
+    cursor: pointer;
+}
 .btn:hover {
-  background-color: #4d6ff7;
+  background-color: #6869a3;
 }
 
 .selecionado {
