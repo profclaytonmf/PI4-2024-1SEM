@@ -3,7 +3,7 @@ from flask import Blueprint, render_template
 educador_blueprint = Blueprint('educador', __name__)
 
 @educador_blueprint.route('/home')
-def Educadorhome():
+def home():
     return render_template('home.html')
 
 @educador_blueprint.route('/EducadorCondTrab')

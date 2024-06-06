@@ -1,18 +1,15 @@
-from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import DataRequired
-import hashlib
+from app import db
+from werkzeug.security import generate_password_hash, check_password_hash
 
-class LoginForm(FlaskForm):
-    username = StringField('Username', validators=[DataRequired()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    submit = SubmitField('Login')
+class Usuario(db.Model):
+    id = db.Column(db.String(80), primary_key=True)
+    senha_hash = db.Column(db.String(128))
+    tipo = db.Column(db.String(80))
 
-class Usuario:
-    def __init__(self, id, senha):
+    def __init__(self, id, senha, tipo):
         self.id = id
-        self.senha = senha
+        self.senha_hash = generate_password_hash(senha)
+        self.tipo = tipo
 
-    def verificar_senha(self, senha):
-        senha_hash = hashlib.sha256(senha.encode()).hexdigest()
-        return self.senha == senha_hash
+    def check_password(self, senha):
+        return check_password_hash(self.senha_hash, senha)
