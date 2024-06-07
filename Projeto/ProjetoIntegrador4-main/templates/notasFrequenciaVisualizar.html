@@ -1,4 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,109 +12,113 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/styles.css">
     <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/stylesindex.css">
-    
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>  
+    </style>
 </head>
+
 <body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <br>
-      <div class="logo-ofc text-center"></div>
-      <ul class="sidebar-nav">
-          <li class="sidebar-brand mb-4">
-              <a href="menu"><Menu></a>
-            </li>
-            <li>
-              <a href="home">Home</a>
-            </li>
-            <li>
-              <a href="dados">Dados</a>
-            </li>
-            <li>
-              <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-            </li>
-            <li>
-              <a href="#">Avaliar</a>
-              <ul>
-                <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-                <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-                <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-                <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-                <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <br>
+            <div class="logo-ofc text-center"></div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand mb-4">
+                    <a href="menu">
+                        <Menu>
+                    </a>
+                </li>
+                <li>
+                    <a href="home">Home</a>
+                </li>
+                <li>
+                    <a href="dados">Dados</a>
+                </li>
+                <li>
+                    <a href="FrequenciaVisualizar">Nota e Frequencia</a>
+                </li>
+                <li>
+                    <a href="#">Avaliar</a>
+                    <ul>
+                        <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
+                        <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
+                        <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
+                        <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
+                        <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
+                    </ul>
+                </li>
             </ul>
-            </li>
-      </ul>
-    </div>
-    <br>
-    <br>
-    <br>
+        </div>
+        <br>
+        <br>
+        <br>
 
 
-  
-    <div class="row" >
-        
-        <div class="col-md-2"></div>
-        <div class="col-md-9">
-            <br>
-            <h4 class="text-center"> NOTAS FREQUÊNCIA <h4>
-            <br>
-            <div class="box table-box scrollable-table">
-            <table class = "scrolldown">
-                <thead>
-                    <tr>
-                        <th>Matéria</th>
-                        <th>Frequencia</th>
-                        <th>Nota</th>
-                        <th>Professor</th>
-                    </tr>
-                </thead>
-                    <tbody>
-                    <tr>
-                        <td>Português</td>
-                        <td>100% de Frequência</td>
-                        <td>8,3</td>
-                        <td>Ozias</td>
-                    </tr>
-                    <tr>
-                        <td>Matematica</td>
-                        <td>100% de Frequência</td>
-                        <td>9</td>
-                        <td>Toshio</td>
-                    </tr>
-                    <tr>
-                        <td>Inglês</td>
-                        <td>87% de Frequência</td>
-                        <td>9</td>
-                        <td>Vinicius</td>
-                    </tr>
-                    <tr>
-                        <td>Quimíca</td>
-                        <td>97% de Frequência</td>
-                        <td>5</td>
-                        <td>Martinele</td>
-                    </tr>
-                    <tr>
-                        <td>Biologia</td>
-                        <td>80% de Frequência</td>
-                        <td>7</td>
-                        <td>Thiago</td>
-                    </tr>
-                    <tr>
-                        <td>Fisíca</td>
-                        <td>100% de Frequência</td>
-                        <td>10</td>
-                        <td>Elaine</td>
-                    </tr>
-                    </tbody>
-                </table>
+
+        <div class="row">
+
+            <div class="col-md-2"></div>
+            <div class="col-md-9">
+                <br>
+                <h4 class="text-center"> NOTAS FREQUÊNCIA <h4>
+                        <br>
+                        <div class="box table-box scrollable-table">
+                            <table class="scrolldown">
+                                <thead>
+                                    <tr>
+                                        <th>Matéria</th>
+                                        <th>Frequencia</th>
+                                        <th>Nota</th>
+                                        <th>Professor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Português</td>
+                                        <td>100% de Frequência</td>
+                                        <td>8,3</td>
+                                        <td>Ozias</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matematica</td>
+                                        <td>100% de Frequência</td>
+                                        <td>9</td>
+                                        <td>Toshio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inglês</td>
+                                        <td>87% de Frequência</td>
+                                        <td>9</td>
+                                        <td>Vinicius</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quimíca</td>
+                                        <td>97% de Frequência</td>
+                                        <td>5</td>
+                                        <td>Martinele</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biologia</td>
+                                        <td>80% de Frequência</td>
+                                        <td>7</td>
+                                        <td>Thiago</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fisíca</td>
+                                        <td>100% de Frequência</td>
+                                        <td>10</td>
+                                        <td>Elaine</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
             </div>
         </div>
-    </div>
 
 
 
 </body>
+
 </html>
