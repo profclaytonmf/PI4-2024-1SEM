@@ -149,15 +149,13 @@
 }
 
 .btn-custom {
-  width: 37px;
-  height: 39px;
-  background-color: transparent;
+  width: 20px;
+  height: 20px;
+
   color: rgb(0, 0, 0);
   border: none;
-  border-radius: 1px;
-  padding: 10px 10px;
   transition: all 0.3s ease;
-  box-shadow: 1px  1px 1px 1px rgba(46, 46, 46, 0.1);
+
 }
 
 
