@@ -40,7 +40,7 @@ def load_user(user_id):
     cur.execute('SELECT * FROM usuarios WHERE ID = %s', [user_id])
     usuario = cur.fetchone()
     if usuario:
-        return User(id=usuario[0], senha=usuario[1], tipo=usuario[2])
+        return User(id=usuario[0], senha=usuario[5], tipo=usuario[4])  # Ajustado para senha=usuario[5] e tipo=usuario[4]
     return None
 
 @app.route('/login/login', methods=['POST'])
@@ -51,10 +51,20 @@ def login():
     cur.execute('SELECT * FROM usuarios WHERE ID = %s AND Senha = %s', (user_id, password))
     usuario = cur.fetchone()
     if usuario:
-        user = User(id=usuario[0], senha=usuario[1], tipo=usuario[2], active=True)
+        user = User(id=usuario[0], senha=usuario[5], tipo=usuario[4], active=True)  # Ajustado para senha=usuario[5] e tipo=usuario[4]
         login_user(user)
-        return redirect(url_for('educando.home'))
-    
+        if user.tipo == 'Educando':
+            return redirect(url_for('educando.home'))
+        elif user.tipo == 'Educador':
+            return redirect(url_for('educador.home'))
+        elif user.tipo == 'Gestor':
+            return redirect(url_for('gestor.home'))
+        elif user.tipo == 'Funcionario':
+            return redirect(url_for('funcionario.home'))
+        else:
+            return 'Tipo de usuário não reconhecido'
+    else:
+        return 'Usuário ou senha inválidos'  
     
 app.register_blueprint(login_blueprint, url_prefix='/login')
 app.register_blueprint(educando_blueprint, url_prefix='/educando')
