@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+from flask import Blueprint
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
@@ -12,40 +13,15 @@ app.config['MYSQL_DB'] = 'EducaAnalytics'
 
 mysql = MySQL(app)
 
-@app.route('/')
-def home():
-    return render_template('formsAutonomiaAlunos.html')
+forms_blueprint = Blueprint('forms', __name__)
 
-@app.route('/submit_form', methods=['POST'])
-def submit_form():
-    if request.method == 'POST':
+@forms_blueprint.route('/form1')
+def form1():
+    return render_template('form1.html')
 
-        answer1 = request.form['answer1']
-        answer2 = request.form['answer2']
-        answer3 = request.form['answer3']
-        answer4 = request.form['answer4']
-        answer5 = request.form['answer5']
-        answer6 = request.form['answer6']
-        answer7 = request.form['answer7']
-        answer8 = request.form['answer8']
-        answer9 = request.form['answer9']
-        answer10 = request.form['answer10']
-        
-        cur = mysql.connection.cursor()
-
-
-        cur.execute("INSERT INTO tformseducandos (Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", 
-                    (answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10))
-
-
-        mysql.connection.commit()
-
-
-        cur.close()
-
-        return 'Sucesso!'
-    else:
-        return 'Erro na solicitação.'
+@forms_blueprint.route('/form2')
+def form2():
+    return render_template('form2.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

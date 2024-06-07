@@ -1,4 +1,5 @@
 from flask import Flask, redirect, url_for, request
+from flask import Blueprint
 from flask_login import LoginManager, UserMixin, login_user
 from flask_mysqldb import MySQL
 from controllers.educando_controller import educando_blueprint
@@ -6,16 +7,16 @@ from controllers.educador_controller import educador_blueprint
 from controllers.gestor_controller import gestor_blueprint
 from controllers.funcionario_controller import funcionario_blueprint
 from controllers.login_controller import login_blueprint
+from app import app, mysql
 import hashlib
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '6LelIO0pAAAAADNdXiI48Ux0Qg0FI6ihzjiJwg6z'
+
 app.config['MYSQL_USER'] = 'aline'
 app.config['MYSQL_HOST'] = '127.0.0.1'
 app.config['MYSQL_PORT'] = 3306
 app.config['MYSQL_PASSWORD'] = 'Newell01@'
 app.config['MYSQL_DB'] = 'EducaAnalytics'
-app.config['RECAPTCHA_PUBLIC_KEY'] = '6LelIO0pAAAAANRPlTGQtlT5S_ytbg2zX8Sh_lir'
 
 mysql = MySQL(app)
 
