@@ -1,17 +1,6 @@
-from flask import Blueprint, render_template
-from flask import request
-from flask_mysqldb import MySQL
-from flask import current_app as app
+from flask import Blueprint, render_template, request
 
 educando_blueprint = Blueprint('educando', __name__)
-
-app.config['MYSQL_USER'] = 'aline'
-app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_PORT'] = 3306
-app.config['MYSQL_PASSWORD'] = 'Newell01@'
-app.config['MYSQL_DB'] = 'EducaAnalytics'
-
-mysql = MySQL(app)
 
 @educando_blueprint.route('/home')
 def home():
@@ -23,6 +12,7 @@ def AlunosAutonomia():
 
 @educando_blueprint.route('/educandoAutonomia/submit_form', methods=['POST'])
 def submit_form():
+    from app import app, mysql
     answer1 = request.form.get('answer1')
     answer2 = request.form.get('answer2')
     answer3 = request.form.get('answer3')

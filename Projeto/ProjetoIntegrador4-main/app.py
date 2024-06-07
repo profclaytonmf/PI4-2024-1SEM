@@ -1,5 +1,4 @@
 from flask import Flask, redirect, url_for, request
-from flask import Blueprint
 from flask_login import LoginManager, UserMixin, login_user
 from flask_mysqldb import MySQL
 from controllers.educando_controller import educando_blueprint
@@ -7,10 +6,11 @@ from controllers.educador_controller import educador_blueprint
 from controllers.gestor_controller import gestor_blueprint
 from controllers.funcionario_controller import funcionario_blueprint
 from controllers.login_controller import login_blueprint
-from app import app, mysql
 import hashlib
+import secrets
 
 app = Flask(__name__)
+app.secret_key = secrets.token_hex(16)
 
 app.config['MYSQL_USER'] = 'aline'
 app.config['MYSQL_HOST'] = '127.0.0.1'
@@ -19,7 +19,6 @@ app.config['MYSQL_PASSWORD'] = 'Newell01@'
 app.config['MYSQL_DB'] = 'EducaAnalytics'
 
 mysql = MySQL(app)
-
 # Inicializa o Login
 login_manager = LoginManager()
 login_manager.init_app(app)
