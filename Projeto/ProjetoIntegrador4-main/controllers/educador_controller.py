@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 educador_blueprint = Blueprint('educador', __name__)
 
