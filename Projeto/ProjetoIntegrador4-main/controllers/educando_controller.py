@@ -48,6 +48,55 @@ def submit_form2():
 
     return 'Sucesso!'
 
+@educando_blueprint.route('/Aluno5/submit_form5', methods=['POST'])
+def submit_form3():
+    from app import app, mysql
+    answer17 = request.form.get('answer17')
+    answer18 = request.form.get('answer18')
+    answer19 = request.form.get('answer19')
+    answer20 = request.form.get('answer20')
+    answer21 = request.form.get('answer21')
+    answer22 = request.form.get('answer22')
+    answer23 = request.form.get('answer23')
+    answer24 = request.form.get('answer24')
+
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO form_educando(Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)", (answer17, answer18, answer19, answer20, answer21, answer22, answer23, answer24))
+    mysql.connection.commit()
+    cur.close()
+
+    return 'Sucesso!'
+
+@educando_blueprint.route('/Aluno4/submit_form4', methods=['POST'])
+def submit_form4():
+    from app import app, mysql
+    answer25 = request.form.get('answer25')
+    answer26 = request.form.get('answer26')
+    answer27 = request.form.get('answer27')
+    answer28 = request.form.get('answer28')
+
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO form_educando(Q25, Q26, Q27, Q28) VALUES (%s, %s, %s, %s)", (answer25, answer26, answer27, answer28))
+    mysql.connection.commit()
+    cur.close()
+
+    return 'Sucesso!'
+
+@educando_blueprint.route('/Aluno3/submit_form3', methods=['POST'])
+def submit_form3():
+    from app import app, mysql
+    answer29 = request.form.get('answer29')
+    answer30 = request.form.get('answer30')
+    answer31 = request.form.get('answer31')
+    answer32 = request.form.get('answer32')
+
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO form_educando(Q29, Q30, Q31, Q32) VALUES (%s, %s, %s, %s)", (answer29, answer30, answer31, answer32))
+    mysql.connection.commit()
+    cur.close()
+
+    return 'Sucesso!'
+
 
 @educando_blueprint.route('/AlunosEnsino')
 def AlunosEnsino():
