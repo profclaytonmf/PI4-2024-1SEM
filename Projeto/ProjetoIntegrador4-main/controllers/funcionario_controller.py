@@ -6,7 +6,7 @@ funcionario_blueprint = Blueprint('funcionario', __name__)
 def home():
     return render_template('FuncionarioHome.html')
 
-@funcionario_blueprint.route('/Gestor')
+@funcionario_blueprint.route('/FuncionarioGestao')
 def FuncionarioGestao():
     return render_template('formsFuncionariosGestao.html')
 

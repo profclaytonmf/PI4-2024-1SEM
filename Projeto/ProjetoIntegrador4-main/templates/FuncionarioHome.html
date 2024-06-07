@@ -30,18 +30,13 @@
               <a href="dados">Dados</a>
             </li>
             <li>
-              <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-            </li>
-            <li>
               <a href="#">Avaliar</a>
               <ul>
-                <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-                <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-                <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-                <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-                <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
+                <li><a href="{{ url_for('funcionario.FuncionarioGestao') }}">Gestao</a></li>
+                <li><a href="{{ url_for('funcionario.FuncionarioInfra') }}">Infraestrutura</a></li>
+                <li><a href="{{ url_for('funcionario.FuncionarioSatis') }}">Satisfação</a></li>
             </ul>
-            </li>
+        </li>
       </ul>
     </div>
 
