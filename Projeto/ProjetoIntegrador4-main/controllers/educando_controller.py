@@ -31,25 +31,12 @@ def submit_form1():
 
     return 'Sucesso!'
 
-@educando_blueprint.route('/Aluno2/submit_form2', methods=['POST'])
-def submit_form2():
-    from app import app, mysql
-    answer11 = request.form.get('answer11')
-    answer12 = request.form.get('answer12')
-    answer13 = request.form.get('answer13')
-    answer14 = request.form.get('answer14')
-    answer15 = request.form.get('answer15')
-    answer16 = request.form.get('answer16')
-
-    cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO form_educando(Q11, Q12, Q13, Q14, Q15, Q16) VALUES (%s, %s, %s, %s, %s, %s)", (answer11, answer12, answer13, answer14, answer15, answer16))
-    mysql.connection.commit()
-    cur.close()
-
-    return 'Sucesso!'
+@educando_blueprint.route('/AlunosEnsino')
+def AlunosEnsino():
+    return render_template('formsAlunosQualidadeEnsino.html')
 
 @educando_blueprint.route('/Aluno5/submit_form5', methods=['POST'])
-def submit_form3():
+def submit_form5():
     from app import app, mysql
     answer17 = request.form.get('answer17')
     answer18 = request.form.get('answer18')
@@ -67,6 +54,31 @@ def submit_form3():
 
     return 'Sucesso!'
 
+@educando_blueprint.route('/AlunosClima')
+def AlunosClima():
+    return render_template('formsAlunosClimaEscolar.html')
+
+@educando_blueprint.route('/Aluno2/submit_form2', methods=['POST'])
+def submit_form2():
+    from app import app, mysql
+    answer11 = request.form.get('answer11')
+    answer12 = request.form.get('answer12')
+    answer13 = request.form.get('answer13')
+    answer14 = request.form.get('answer14')
+    answer15 = request.form.get('answer15')
+    answer16 = request.form.get('answer16')
+
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO form_educando(Q11, Q12, Q13, Q14, Q15, Q16) VALUES (%s, %s, %s, %s, %s, %s)", (answer11, answer12, answer13, answer14, answer15, answer16))
+    mysql.connection.commit()
+    cur.close()
+
+    return 'Sucesso!'
+
+@educando_blueprint.route('/AlunosInfra')
+def AlunosInfra():
+    return render_template('formsAlunosInfraestrutura.html')
+
 @educando_blueprint.route('/Aluno4/submit_form4', methods=['POST'])
 def submit_form4():
     from app import app, mysql
@@ -82,6 +94,10 @@ def submit_form4():
 
     return 'Sucesso!'
 
+@educando_blueprint.route('/AlunosGestao')
+def AlunosGestao():
+    return render_template('formsAlunosGestao.html')
+
 @educando_blueprint.route('/Aluno3/submit_form3', methods=['POST'])
 def submit_form3():
     from app import app, mysql
@@ -96,23 +112,6 @@ def submit_form3():
     cur.close()
 
     return 'Sucesso!'
-
-
-@educando_blueprint.route('/AlunosEnsino')
-def AlunosEnsino():
-    return render_template('formsAlunosQualidadeEnsino.html')
-
-@educando_blueprint.route('/AlunosClima')
-def AlunosClima():
-    return render_template('formsAlunosClimaEscolar.html')
-
-@educando_blueprint.route('/AlunosInfra')
-def AlunosInfra():
-    return render_template('formsAlunosInfraestrutura.html')
-
-@educando_blueprint.route('/AlunosGestao')
-def AlunosGestao():
-    return render_template('formsAlunosGestao.html')
 
 @educando_blueprint.route('/FrequenciaVisualizar')
 def FrequenciaVisualizar():
