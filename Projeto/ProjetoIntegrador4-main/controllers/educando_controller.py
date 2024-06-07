@@ -25,7 +25,7 @@ def submit_form():
     answer10 = request.form.get('answer10')
 
     cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO form_educando(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) VALUES (%s, %s, ..., %s)", (answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10))
+    cur.execute("INSERT INTO form_educando(Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", (answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10))
     mysql.connection.commit()
     cur.close()
 
