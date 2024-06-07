@@ -11,7 +11,7 @@ def AlunosAutonomia():
     return render_template('formsAlunosAutonomia.html')
 
 @educando_blueprint.route('/Aluno1/submit_form', methods=['POST'])
-def submit_form():
+def submit_form1():
     from app import app, mysql
     answer1 = request.form.get('answer1')
     answer2 = request.form.get('answer2')
@@ -31,8 +31,8 @@ def submit_form():
 
     return 'Sucesso!'
 
-@educando_blueprint.route('/Aluno2/submit_form', methods=['POST'])
-def submit_form():
+@educando_blueprint.route('/Aluno2/submit_form2', methods=['POST'])
+def submit_form2():
     from app import app, mysql
     answer11 = request.form.get('answer11')
     answer12 = request.form.get('answer12')
