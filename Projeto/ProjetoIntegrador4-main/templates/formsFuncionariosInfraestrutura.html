@@ -1,134 +1,257 @@
 <html>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" type="text/javascript"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesindex.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/styles.css">
-    <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/stylesindex.css">
-    <title>Infraestrutura</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>  
-</head>
-<body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <br>
-      <div class="logo-ofc text-center"></div>
-      <ul class="sidebar-nav">
-          <li class="sidebar-brand mb-4">
-              <a href="menu"><Menu></a>
-            </li>
-            <li>
-              <a href="home">Home</a>
-            </li>
-            <li>
-              <a href="dados">Dados</a>
-            </li>
-            <li>
-              <a href="#">Avaliar</a>
-              <ul>
-                <li><a href="{{ url_for('funcionario.FuncionarioGestao') }}">Gestao</a></li>
-                <li><a href="{{ url_for('funcionario.FuncionarioInfra') }}">Infraestrutura</a></li>
-                <li><a href="{{ url_for('funcionario.FuncionarioSatis') }}">Satisfação</a></li>
-            </ul>
-        </li>
-      </ul>
-    </div>
-
-
-
-        <form action="/submit_form" method="POST">
-            <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-9">
-                    <div class="row">
-                            <br>
-                            <br>
-                            <br>             
-                            
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesindex.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/styles.css">
+        <link rel="stylesheet" href="/Projeto/ProjetoIntegrador4-main/static/css/stylesindex.css">
+        <title>Infraestrutura</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <br>
+                <div class="logo-ofc text-center"></div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand mb-4">
+                        <a href="menu"><Menu></a>
+                    </li>
+                    <li>
+                        <a href="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="dados">Dados</a>
+                    </li>
+                    <li>
+                        <a href="#">Avaliar</a>
+                        <ul>
+                            <li><a href="{{ url_for('funcionario.FuncionarioGestao') }}">Gestão</a></li>
+                            <li><a href="{{ url_for('funcionario.FuncionarioInfra') }}">Infraestrutura</a></li>
+                            <li><a href="{{ url_for('funcionario.FuncionarioSatis') }}">Satisfação</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form action="Funcionario2/submit_form" method="POST">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <br><br><br>
+                        </div>
+                        <h1>Infraestrutura</h1>
+                        <p class="tutoform">Atribua notas de 0 a 10, sendo 0 "discordo completamente" e 10 "concordo plenamente", para as afirmações abaixo:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="">1- Você acha que a escola está bem equipada e conservada?</p>
+                                <div class="btn-group" role="group" name="question72">
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="0">
+                                        <span>0</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="1">
+                                        <span>1</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="2">
+                                        <span>2</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="3">
+                                        <span>3</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="4">
+                                        <span>4</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="5">
+                                        <span>5</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="6">
+                                        <span>6</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="7">
+                                        <span>7</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="8">
+                                        <span>8</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="9">
+                                        <span>9</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer72" value="10">
+                                        <span>10</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="">2 - Você acha que os banheiros e as áreas de trabalho são limpos e higiênicos?</p>
+                                <div class="btn-group" role="group" name="question73">
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="0">
+                                        <span>0</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="1">
+                                        <span>1</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="2">
+                                        <span>2</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="3">
+                                        <span>3</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="4">
+                                        <span>4</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="5">
+                                        <span>5</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="6">
+                                        <span>6</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="7">
+                                        <span>7</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="8">
+                                        <span>8</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="9">
+                                        <span>9</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer73" value="10">
+                                        <span>10</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="">3 - Você tem acesso aos recursos e materiais necessários para realizar seu trabalho?</p>
+                                <div class="btn-group" role="group" name="question74">
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="0">
+                                        <span>0</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="1">
+                                        <span>1</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="2">
+                                        <span>2</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="3">
+                                        <span>3</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="4">
+                                        <span>4</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="5">
+                                        <span>5</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="6">
+                                        <span>6</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="7">
+                                        <span>7</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="8">
+                                        <span>8</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="9">
+                                        <span>9</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer74" value="10">
+                                        <span>10</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="">4 - Você se sente seguro no ambiente de trabalho?</p>
+                                <div class="btn-group" role="group" name="question75">
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="0">
+                                        <span>0</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="1">
+                                        <span>1</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="2">
+                                        <span>2</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="3">
+                                        <span>3</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="4">
+                                        <span>4</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="5">
+                                        <span>5</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="6">
+                                        <span>6</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="7">
+                                        <span>7</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="8">
+                                        <span>8</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="9">
+                                        <span>9</span>
+                                    </label>
+                                    <label class="btn-custom">
+                                        <input type="radio" name="answer75" value="10">
+                                        <span>10</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h1>Infraestrutura</h1>
-                    <p class="tutoform">Atribua notas de 0 a 10, sendo 0 "discordo completamente" e 10 "concordo plenamente", 
-                        para as afirmações abaixo:</p>                   
-                    <div class="row">
-                      <div class="col-md-6 ">
-                          <p class="">1- Você acha que a escola está bem equipada e conservada?</p>
-                          <div class="btn-group" role="group"name="question72">
-                              <input type="radio" class="btn-custom" name="answer72" value="0">
-                              <input type="radio" class="btn-custom" name="answer72" value="1">
-                              <input type="radio" class="btn-custom" name="answer72" value="2">
-                              <input type="radio" class="btn-custom" name="answer72" value="3">
-                              <input type="radio" class="btn-custom" name="answer72" value="4">
-                              <input type="radio" class="btn-custom" name="answer72" value="5">
-                              <input type="radio" class="btn-custom" name="answer72" value="6">
-                              <input type="radio" class="btn-custom" name="answer72" value="7">
-                              <input type="radio" class="btn-custom" name="answer72" value="8">
-                              <input type="radio" class="btn-custom" name="answer72" value="9">
-                              <input type="radio" class="btn-custom" name="answer72" value="10">
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <p class="">2 - Você acha que os banheiros e as áreas de trabalho são limpos e higiênicos?</p>
-                          <div class="btn-group" role="group"name="question73">
-                              <input type="radio" class="btn-custom" name="answer73" value="0">
-                              <input type="radio" class="btn-custom" name="answer73" value="1">
-                              <input type="radio" class="btn-custom" name="answer73" value="2">
-                              <input type="radio" class="btn-custom" name="answer73" value="3">
-                              <input type="radio" class="btn-custom" name="answer73" value="4">
-                              <input type="radio" class="btn-custom" name="answer73" value="5">
-                              <input type="radio" class="btn-custom" name="answer73" value="6">
-                              <input type="radio" class="btn-custom" name="answer73" value="7">
-                              <input type="radio" class="btn-custom" name="answer73" value="8">
-                              <input type="radio" class="btn-custom" name="answer73" value="9">
-                              <input type="radio" class="btn-custom" name="answer73" value="10">
-                          </div>
-                      </div>
-                  </div>
-                  <br>
-                  <br>
-                  <div class="row">
-                      <div class="col-md-6 ">
-                          <p class="">3 - Você tem acesso aos recursos e materiais necessários para realizar seu trabalho?</p>
-                          <div class="btn-group" role="group"name="question74">
-                              <input type="radio" class="btn-custom" name="answer74" value="0">
-                              <input type="radio" class="btn-custom" name="answer74" value="1">
-                              <input type="radio" class="btn-custom" name="answer74" value="2">
-                              <input type="radio" class="btn-custom" name="answer74" value="3">
-                              <input type="radio" class="btn-custom" name="answer74" value="4">
-                              <input type="radio" class="btn-custom" name="answer74" value="5">
-                              <input type="radio" class="btn-custom" name="answer74" value="6">
-                              <input type="radio" class="btn-custom" name="answer74" value="7">
-                              <input type="radio" class="btn-custom" name="answer74" value="8">
-                              <input type="radio" class="btn-custom" name="answer74" value="9">
-                              <input type="radio" class="btn-custom" name="answer74" value="10">
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <p class="">4 - Você se sente seguro no ambiente de trabalho?</p>
-                              <div class="btn-group" role="group"name="question75">
-                              <input type="radio" class="btn-custom" name="answer75" value="0">
-                              <input type="radio" class="btn-custom" name="answer75" value="1">
-                              <input type="radio" class="btn-custom" name="answer75" value="2">
-                              <input type="radio" class="btn-custom" name="answer75" value="3">
-                              <input type="radio" class="btn-custom" name="answer75" value="4">
-                              <input type="radio" class="btn-custom" name="answer75" value="5">
-                              <input type="radio" class="btn-custom" name="answer75" value="6">
-                              <input type="radio" class="btn-custom" name="answer75" value="7">
-                              <input type="radio" class="btn-custom" name="answer75" value="8">
-                              <input type="radio" class="btn-custom" name="answer75" value="9">
-                              <input type="radio" class="btn-custom" name="answer75" value="10">
-                              </div>
-                          </div>
-                      </div>        
-                  </div>      
-              </div>
-          </div>
-          <div class="btn-submit">
-              <button type="submit" value="Enviar"></button>
-          </div>
-        </form>
+                </div>
+                <div class="btn-submit">
+                    <button type="submit" value="Enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
     </body>
+</html>
