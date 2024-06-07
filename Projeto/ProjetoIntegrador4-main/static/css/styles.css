@@ -383,6 +383,7 @@ a.nav-link.btn-voltar-pag {
   font-weight: 500;
   border: 0;
   border-radius: 10px;
+  top: 150px;
   background-color: #d24c4c;
   color: rgb(255, 255, 255);
 }
