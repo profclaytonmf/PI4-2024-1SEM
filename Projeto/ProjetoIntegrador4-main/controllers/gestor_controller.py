@@ -8,4 +8,4 @@ def home():
 
 @gestor_blueprint.route('/FrequenciaEnviar')
 def FrequenciaEnviar():
-    return render_template('notasFrequenciaEnviar.html')
+    return render_template('notasFrequenciaEnviarGestor.html')
