@@ -31,6 +31,24 @@ def submit_form():
 
     return 'Sucesso!'
 
+@educando_blueprint.route('/Aluno2/submit_form', methods=['POST'])
+def submit_form():
+    from app import app, mysql
+    answer11 = request.form.get('answer11')
+    answer12 = request.form.get('answer12')
+    answer13 = request.form.get('answer13')
+    answer14 = request.form.get('answer14')
+    answer15 = request.form.get('answer15')
+    answer16 = request.form.get('answer16')
+
+    cur = mysql.connection.cursor()
+    cur.execute("INSERT INTO form_educando(Q11, Q12, Q13, Q14, Q15, Q16) VALUES (%s, %s, %s, %s, %s, %s)", (answer11, answer12, answer13, answer14, answer15, answer16))
+    mysql.connection.commit()
+    cur.close()
+
+    return 'Sucesso!'
+
+
 @educando_blueprint.route('/AlunosEnsino')
 def AlunosEnsino():
     return render_template('formsAlunosQualidadeEnsino.html')
