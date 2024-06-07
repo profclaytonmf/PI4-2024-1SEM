@@ -9,3 +9,7 @@ def home():
 @gestor_blueprint.route('/FrequenciaEnviar')
 def FrequenciaEnviar():
     return render_template('notasFrequenciaEnviarGestor.html')
+
+@gestor_blueprint.route('/Cadastro')
+def Cadastro():
+    return render_template('cadastroUsuario.html')
