@@ -643,3 +643,34 @@ transition: 0.2s;
 .btn-enviar:hover {
   background-color: #555; 
 }
+
+
+
+/* BOTAO RADIO */
+
+.btn-custom span {
+  display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-custom input[type="radio"]:checked + span {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-custom input[type="radio"] {
+  display: none;
+}
+
+.btn-custom {
+  position: relative;
+  margin: 5px;
+}
