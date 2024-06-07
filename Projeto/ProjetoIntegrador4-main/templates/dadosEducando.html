@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
   
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/dados.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/styles.css') }}" />
   </head>
 
   <body>
@@ -113,10 +113,20 @@
                 </div>
               </div>
   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+      <script src="../../../../dist/apexcharts.js"></script>
+      <script src="assets/data.js"></script>
+      <script src="assets/scripts.js"></script>
+  
+      <script></script>
     </body>
   </html>
 
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script src="{{ url_for('static', filename='dist/apexcharts.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/data.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/scripts.js') }}"></script>
+
     <script>
       // Código jQuery para mostrar/ocultar o menu lateral
       $("#menu-toggle").click(function(e) {
