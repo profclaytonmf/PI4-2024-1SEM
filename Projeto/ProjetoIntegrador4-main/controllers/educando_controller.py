@@ -10,7 +10,7 @@ def home():
 def AlunosAutonomia():
     return render_template('formsAlunosAutonomia.html')
 
-@educando_blueprint.route('/educandoAutonomia/submit_form', methods=['POST'])
+@educando_blueprint.route('/Aluno1/submit_form', methods=['POST'])
 def submit_form():
     from app import app, mysql
     answer1 = request.form.get('answer1')
