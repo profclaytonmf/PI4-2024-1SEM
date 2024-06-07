@@ -8,15 +8,15 @@ def home():
 
 @educador_blueprint.route('/EducadorCondTrab')
 def EducadorCondTrab():
-    return render_template('formsProfessoresCondicaoTrab.html')
+    return render_template('formsEducadoresCondicaoTrab.html')
 
 @educador_blueprint.route('/EducadorEnsino')
 def EducadorEnsino():
-    return render_template('formsProfessoresQualidadeEdu.html')
+    return render_template('formsEducadoresQualidadeEdu.html')
 
 @educador_blueprint.route('/EducadorClima')
 def EducadorClima():
-    return render_template('formsProfessoresClimaEscolar.html')
+    return render_template('formsEducadoresClimaEscolar.html')
 
 @educador_blueprint.route('/EducadorInfra')
 def EducadorInfra():
@@ -28,7 +28,7 @@ def EducadorGestao():
 
 @educador_blueprint.route('/EducadorParticipacao')
 def EducadorParticipacao():
-    return render_template('formsProfessoresParticipacao.html')
+    return render_template('formsEducadoresParticipacao.html')
 
 @educador_blueprint.route('/FrequenciaEnviar')
 def FrequenciaEnviar():
