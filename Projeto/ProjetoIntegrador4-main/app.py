@@ -40,7 +40,7 @@ def load_user(user_id):
     cur.execute('SELECT * FROM usuarios WHERE ID = %s', [user_id])
     usuario = cur.fetchone()
     if usuario:
-        return User(id=usuario[0], senha=usuario[5], tipo=usuario[4])  # Ajustado para senha=usuario[5] e tipo=usuario[4]
+        return User(id=usuario[0], senha=usuario[5], tipo=usuario[4]) 
     return None
 
 @app.route('/login/login', methods=['POST'])
@@ -51,7 +51,7 @@ def login():
     cur.execute('SELECT * FROM usuarios WHERE ID = %s AND Senha = %s', (user_id, password))
     usuario = cur.fetchone()
     if usuario:
-        user = User(id=usuario[0], senha=usuario[5], tipo=usuario[4], active=True)  # Ajustado para senha=usuario[5] e tipo=usuario[4]
+        user = User(id=usuario[0], senha=usuario[5], tipo=usuario[4], active=True)
         login_user(user)
         if user.tipo == 'Educando':
             return redirect(url_for('educando.home'))
