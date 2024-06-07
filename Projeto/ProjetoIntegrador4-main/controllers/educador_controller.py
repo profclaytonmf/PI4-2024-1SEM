@@ -24,7 +24,7 @@ def EducadorInfra():
 
 @educador_blueprint.route('/EducadorGestao')
 def EducadorGestao():
-    return render_template('formsFuncionariosGestao.html')
+    return render_template('formsEducadoresGestao.html')
 
 @educador_blueprint.route('/EducadorParticipacao')
 def EducadorParticipacao():
