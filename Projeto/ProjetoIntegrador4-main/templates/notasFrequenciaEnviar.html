@@ -12,12 +12,44 @@
         <div class="container">
             <div class="row header">
                 <div class="col-sm-6">
-                    <h2 class="h2-formAluno">Notas e Frequência</h2>
+                    <h2 class="h2-formAluno"></h2>
                 </div>
             </div>
         </div> 
         <br>
         <br>
+    </header>
+
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+          <br>
+          <div class="logo-ofc text-center"></div>
+          <ul class="sidebar-nav">
+              <li class="sidebar-brand mb-4">
+                  <a href="menu"><Menu></a>
+                </li>
+                <li>
+                  <a href="home">Home</a>
+                </li>
+                <li>
+                  <a href="dados">Dados</a>
+                </li>
+                <li>
+                    <li><a href="{{ url_for('educador.FrequenciaEnviar') }}">Nota e Frequencia</a></li>
+                </li>
+                <li>
+                  <a href="#">Avaliar</a>
+                  <ul>
+                    <li><a href="{{ url_for('educador.EducadorCondTrab') }}">Trabalho</a></li>
+                    <li><a href="{{ url_for('educador.EducadorEnsino') }}">Ensino</a></li>
+                    <li><a href="{{ url_for('educador.EducadorClima') }}">Clima Escolar</a></li>
+                    <li><a href="{{ url_for('educador.EducadorInfra') }}">Infraestrutura</a></li>
+                    <li><a href="{{ url_for('educador.EducadorGestao') }}">Gestão</a></li>
+                    <li><a href="{{ url_for('educador.EducadorParticipacao') }}">Participação</a></li>
+                </ul>
+                </li>
+          </ul>
+        </div>
         <div class="row" >
         
             <div class="col-md-2"></div>
