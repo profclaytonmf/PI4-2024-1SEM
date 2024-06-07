@@ -30,6 +30,6 @@ def EducadorGestao():
 def EducadorParticipacao():
     return render_template('formsProfessoresParticipacao.html')
 
-@educador_blueprint.route('/FrequenciaVisualizar')
-def FrequenciaVisualizar():
-    return render_template('notasFrequenciaVisualizar.html')
+@educador_blueprint.route('/FrequenciaEnviar')
+def FrequenciaEnviar():
+    return render_template('notasFrequenciaEnviar.html')

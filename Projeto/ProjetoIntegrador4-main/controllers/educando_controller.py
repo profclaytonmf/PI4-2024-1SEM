@@ -26,6 +26,6 @@ def AlunosInfra():
 def AlunosGestao():
     return render_template('formsAlunosGestao.html')
 
-@educando_blueprint.route('/FrequenciaEnviar')
-def FrequenciaEnviar():
-    return render_template('notasFrequenciaEnviar.html')
+@educando_blueprint.route('/FrequenciaVisualizar')
+def FrequenciaVisualizar():
+    return render_template('notasFrequenciaVisualizar.html')
