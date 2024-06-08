@@ -1,10 +1,22 @@
 from flask import Blueprint, render_template, request
+from app import mysql
 
 educando_blueprint = Blueprint('educando', __name__)
 
 @educando_blueprint.route('/home')
 def home():
     return render_template('home.html')
+
+@educando_blueprint.route('/dados')
+def dadosEducando():  
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT (IFNULL(Q1, 0) + IFNULL(Q2, 0) + IFNULL(Q3, 0) + IFNULL(Q4, 0) + IFNULL(Q5, 0) + IFNULL(Q6, 0) + IFNULL(Q7, 0) + IFNULL(Q8, 0) + IFNULL(Q9, 0) + IFNULL(Q10, 0)) / 10 as media FROM form_educando")
+    medias = cursor.fetchall()
+    if medias:
+        media_geral = sum(media[0] for media in medias if media[0] is not None) / len(medias)
+    else:
+        media_geral = 0
+    return render_template('dadosEducando.html', media_geral=media_geral)
 
 @educando_blueprint.route('/AlunosAutonomia')
 def AlunosAutonomia():
