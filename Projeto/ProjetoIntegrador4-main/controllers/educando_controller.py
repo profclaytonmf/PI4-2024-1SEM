@@ -7,16 +7,16 @@ educando_blueprint = Blueprint('educando', __name__)
 def home():
     return render_template('home.html')
 
-@educando_blueprint.route('/dados')
+@educando_blueprint.route('/dadosEducando')
 def dadosEducando():  
     cursor = mysql.connection.cursor()
     cursor.execute("SELECT (IFNULL(Q1, 0) + IFNULL(Q2, 0) + IFNULL(Q3, 0) + IFNULL(Q4, 0) + IFNULL(Q5, 0) + IFNULL(Q6, 0) + IFNULL(Q7, 0) + IFNULL(Q8, 0) + IFNULL(Q9, 0) + IFNULL(Q10, 0)) / 10 as media FROM form_educando")
     medias = cursor.fetchall()
     if medias:
-        media_geral = sum(media[0] for media in medias if media[0] is not None) / len(medias)
+        media_autonomia = sum(media[0] for media in medias if media[0] is not None) / len(medias)
     else:
-        media_geral = 0
-    return render_template('dadosEducando.html', media_geral=media_geral)
+        media_autonomia = 0
+    return render_template('dadosEducando.html', media_autonomia=media_autonomia)
 
 @educando_blueprint.route('/AlunosAutonomia')
 def AlunosAutonomia():
