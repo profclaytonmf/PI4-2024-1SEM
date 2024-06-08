@@ -15,34 +15,24 @@
 </head>
 
 <body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <br>
-      <div class="logo-ofc text-center"></div>
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand mb-4">
-          <a href="menu">
-            <Menu>
-          </a>
-        </li>
-        <li>
-          <a href="home">Home</a>
-        </li>
-        <li>
-          <a href="dados">Dados</a>
-        </li>
-        <li>
-          <a href="FrequenciaVisualizar">Nota e Frequencia</a>
-        </li>
-        <li>
-          <a href="#">Avaliar</a>
-          <ul>
-            <li><a href="{{ url_for('educando.AlunosAutonomia') }}">Autonomia</a></li>
-            <li><a href="{{ url_for('educando.AlunosEnsino') }}">Ensino</a></li>
-            <li><a href="{{ url_for('educando.AlunosClima') }}">Clima Escolar</a></li>
-            <li><a href="{{ url_for('educando.AlunosInfra') }}">Infraestrutura</a></li>
-            <li><a href="{{ url_for('educando.AlunosGestao') }}">Gestão</a></li>
-          </ul>
+  <body>
+    <div id="wrapper">
+      <div id="sidebar-wrapper">
+        <br>
+        <div class="logo-ofc text-center"></div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand mb-4">
+                <a href="menu"><Menu></a>
+              </li>
+              <li>
+                <a href="home">Home</a>
+              </li>
+              <li>
+                <a href="dados">Dados</a>
+              </li>
+              <li>
+                  <a href="cadastro">Cadastro</a>
+              </li>
         </li>
         <li>
           <a href="{{ url_for('educando.dadosEducando') }}">Média Autonomia - Educandos</a>
