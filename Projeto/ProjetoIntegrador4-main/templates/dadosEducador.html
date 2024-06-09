@@ -45,29 +45,132 @@
             </li>
         </ul>
     
-          <a href="{{ url_for('educando.dadosEducando') }}">Média Autonomia - Educandos</a>
-        </li>
-      </ul>
-    </div>
-    <div id="content-wrapper">
-      <div class="container-fluid">
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-md-2">
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div id="content-wrapper">
+    <div class="container-fluid">
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-2">
 
+        </div>
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educandos - Nota da Autonomia</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
           </div>
-          <div class="col-md-9 text-center">
-            <h4>Média Geral</h4>
-        <p>{{ media_geral}}</p>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educandos - Nota do Clima Escolar</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
           </div>
         </div>
-        
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educandos - Nota da Gestão</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educandos - Nota da Infraestrutura</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educandos - Nota da Qualidade do Ensino</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educadores - Nota do Clima Escolar</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educadores - Nota da Condição de Trabalho</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educadores - Nota da Gestão</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educadores - Nota da Infraestrutura</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Educadores - Nota da Satisfação</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4 row-2">
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Funcionários - Nota da Gestão</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ url_for('educador.dadosEducador') }}">
+              <div class="box table-box scrollable-table">
+                <h4>Funcionários - Nota da Satisfação</h4>
+                <p>{{ media_autonomia }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-    
+</div>
+  
 </body>
 
 </html>
