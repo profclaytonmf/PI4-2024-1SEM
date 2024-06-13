@@ -273,8 +273,8 @@ table.scrolldown thead {
 
 tbody td,
         thead th {
-            width: 200px;
-            /* border-right: 2px solid black; */
+            width: 80px;
+          font-size: 17px;
         }
 
 table.scrolldown tbody {
@@ -411,20 +411,8 @@ a.nav-link.btn-voltar-pag {
   padding: 20px;
   margin-left: 100px;
   margin-right:0px;
-  border-radius: 8px;
+  border-radius: 1px;
   
-}
-
-.table-box table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-  line-height: 1.43;
-  max-height: calc(1.5em * 10); 
-  overflow-y: auto;
-  display: block;
-  outline: none;
-  border: none;
 }
 
 .table-box th, .table-box td {
@@ -444,7 +432,8 @@ a.nav-link.btn-voltar-pag {
 }
 
 .table-box table::-webkit-scrollbar {
-  width: 8px;
+  width: 25px;
+  height: 150px;
 }
 
 .table-box table::-webkit-scrollbar-track {
@@ -452,12 +441,12 @@ a.nav-link.btn-voltar-pag {
 }
 
 .table-box table::-webkit-scrollbar-thumb {
-  background: #FF6101;
+  background: #000000;
   border-radius: 4px;
 }
 
 .table-box table::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: #fffefe;
 }
 
 .header-img {
