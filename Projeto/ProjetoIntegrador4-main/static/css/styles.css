@@ -1,0 +1,663 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.imagem-fixa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/imgLogin.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.icon-user {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/account_box.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.text-user {
+  left: 4px;
+  color: white;
+  top: -700px;
+}
+
+.topo-pagina {
+  position: fixed;
+  top: 50px;
+  width: 65%;
+  right: 190px;
+  z-index: 800;
+}
+.h2-formAluno {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: 050e32;
+}
+.login-box {
+  width: 400px;
+  height: 350px;
+  padding: 50px;
+  position: relative;
+  top: 150px;
+  left: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: 150px;
+}
+.cadastro-box {
+  width: 520px;
+  height: 620px;
+  padding: 40px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: 150px;
+}
+.button-cadastro {
+  width: 120px;
+  border-radius: 10px;
+  background-color: #6c757d; 
+  color: #fff; 
+  border-color: #6c757d;
+}
+.button-cadastro:hover {
+  background-color: #3f4143; 
+  border-color: #616161; 
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.login-box h2 {
+  margin: 0 0 20px;
+  padding: 0;
+  color: #333;
+  text-align: left;
+}
+.title-cadastro {
+  font-size: 20px;
+  color: 050e32;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  background: transparent;
+  color: #555;
+}
+.textbox-conta {
+  font-size: 13px;
+  color: #555;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color:rgba(255, 255, 255, 0);
+    border: 10;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+  background-color: #d2c9c9;
+}
+
+.selecionado {
+  background: black;
+  color: white;
+}
+
+
+.left-menu-logo {
+  background-image: url("../img/Prancheta1.png");
+  background-repeat: no-repeat;
+}
+
+.texto-superior {
+  position: absolute;
+  top: 150px;
+  right: 565px;
+  transform: translateX(-50%);
+}
+
+.btn-custom {
+  width: 20px;
+  height: 20px;
+
+  color: rgb(0, 0, 0);
+  border: none;
+  transition: all 0.3s ease;
+
+}
+
+
+
+.btn-custom:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-custom:disabled {
+  background-color: #6c757d;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.button-container button {
+  padding: 10px 14px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  top: 250px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.h2-notaFrequencia {
+  font-family: "Poppins", sans-serif;
+  font-weight: 750;
+  font-size: 23px;
+}
+.input-text-procurarMateria {
+  width: 260px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeef4;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+.input-text-filtroData {
+  width: 260px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeef4;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+.btn-buscar {
+  width: 200px;
+  background-color: #d60a0b;
+  color: #fff;
+  border: none;
+  font-weight: 620;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Estilo para a tabela */
+
+table body {
+  overflow-y: auto;
+  height: 200px;
+}
+
+table.scrolldown {
+  width: 100%;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar-thumb  { 
+  width: 10px;
+
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+/* Estilo para as células de dados */
+td {
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+table.scrolldown {
+  width: 68%;
+
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+tbody td,
+        thead th {
+            width: 80px;
+          font-size: 17px;
+        }
+
+table.scrolldown tbody {
+
+  height: 200px;
+ 
+  overflow-y: auto;
+ 
+  overflow-x: auto;
+  
+}
+
+
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.teste-h3 {
+  color: green;
+  width: 500px;
+}
+
+
+.controle-pags {
+  display: inline-block;
+  align-items: left;
+  position: absolute;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.controle-pags button {
+  cursor: pointer;
+}
+
+.controle-pags button.next {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  border: 0;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 0.5px solid #131f73;
+}
+.controle-pags button.num {
+  padding: 5px 10px;
+  font-size: medium;
+  border: 0.5px solid #131f73;
+  border-radius: 15%;
+  border-width: 2px;
+  background-color: transparent;
+}
+
+.controle-pags button.atual {
+  color: white;
+  background-color: #d60a0b;
+  border: 0.5px solid #d60a0b;
+  border-radius: 15%;
+  border-width: 2px;
+}
+
+a.nav-link.controle-pags-num {
+  display: inline-block;
+}
+
+.controle-pags-num button:hover {
+  box-shadow: 0px 0px 3px #131f73;
+  transform: scale(1.075);
+  transition: 0.2s;
+}
+
+a.nav-link.btn-proxima-pag {
+  display: inline-block;
+}
+
+.btn-proxima-pag:hover {
+  box-shadow: 0px 0px 8px black;
+  transform: scale(1.075);
+  transition: 0.2s;
+}
+a.nav-link.btn-voltar-pag {
+  display: inline-block;
+}
+
+.btn-voltar-pag:hover {
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.075);
+    transition: 0.2s;
+}
+
+
+.btn-submit input:hover {
+    box-shadow: 0px 0px 8px rgb(195, 128, 128);
+  transform: scale(1.075);
+  transition: 0.2s;
+}
+
+.clayton-botao{
+  width: 150px;
+  position: relative;
+  font-size: 18px;
+  color: rgba(140, 140, 140, 0.87);
+  font-weight: 500;
+  border: 0;
+  border-radius: 10px;
+  top: 150px;
+  background-color: #d24c4c;
+  color: rgb(255, 255, 255);
+}
+.tutoform {
+  color: grey;
+  font-size: 18px;
+}
+
+/* texto home */
+.texto {
+  align-items: center;
+  display: flex;
+  color: #000000;
+}
+
+
+
+.table-box {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  min-height: 5px;
+  margin: 0;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right:0px;
+  border-radius: 1px;
+  
+}
+
+.table-box th, .table-box td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-box h2 {
+  margin-bottom: 30px;
+  color:#FF6101;
+  font-weight: bold;
+}
+
+.table-box table::-webkit-scrollbar {
+  width: 25px;
+  height: 150px;
+}
+
+.table-box table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-box table::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
+
+.table-box table::-webkit-scrollbar-thumb:hover {
+  background: #fffefe;
+}
+
+.header-img {
+  background-image: url('../img/header-home.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 350px; 
+  width: 100%;
+  color: #fff; 
+  padding: 20px; 
+}
+
+
+.texto-sobreposto {
+  position: absolute; 
+  top: 20%; 
+  left: 21%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  color: #ffffff; 
+  z-index: 1; 
+}
+
+.h5-header {
+  top: 120px;
+  font-weight: 790; 
+  font-size: 25px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+  color: #ffffff; 
+}
+
+.transparent-button {
+  background-color: #ffffff;
+  border-radius: 7px;
+  color: #000000; 
+  padding: 4px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  margin-top: 125px; 
+  right: 145px;
+}
+
+.transparent-button:hover {
+  background-color: burlywood; 
+  font-weight: 520;
+  border: 2px solid burlywood; 
+}
+.title-welcome{
+  position: relative;
+  right: 70px;
+}
+.teste{
+  box-sizing: 250px;
+}
+
+.h5-body-title {
+  left: 420px;
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
+
+.statics-log{
+  height: 115px; 
+  width: 150px; 
+  background-image: url('../img/statics1.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.staticsTittle-log{
+  position: relative;
+  top: 125px;
+  left: 22px;
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
+.school-log{
+  height: 115px; 
+  width: 150px; 
+  background-image: url('../img/schoolLog.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.gestao-log{
+  height: 115px; 
+  width: 170px; 
+  background-image: url('../img/gestaoIcon.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.text-box-estatistica{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.text-box-personal{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.text-box-gestao{
+  position: relative;
+  top: 35px;
+  width: 280px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.homeImag-body {
+  border-radius: 15px;
+  position: relative;
+  right: -100px;
+  height: 315px;
+  width: 550px;
+  background-image: url('../img/bodyimgHome.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutUs-tittleHome{
+  border: none;
+  color:#000;
+  font-weight: 790; 
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 1.5;
+}
+
+.btn-submit-input-climaEscola{
+  left: 1100px;
+  width: 300px;
+  position: relative;
+  margin: 25px 50px 0px 0px;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  border: 0;
+  border-radius: 20px;
+  background-color: #042d6b;
+  color: rgb(255, 255, 255);
+}
+.btn-submit-input-climaEscola:hover {
+  box-shadow: 0px 0px 8px black;
+transform: scale(1.075);
+transition: 0.2s;
+}
+
+.botao-enviar-autonomia{
+  width: 110px;
+  background-color: #333;
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.btn-enviar:hover {
+  background-color: #555; 
+}
+
+
+
+/* BOTAO RADIO */
+
+.btn-custom span {
+  display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-custom input[type="radio"]:checked + span {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-custom input[type="radio"] {
+  display: none;
+}
+
+.btn-custom {
+  position: relative;
+  margin: 5px;
+}
